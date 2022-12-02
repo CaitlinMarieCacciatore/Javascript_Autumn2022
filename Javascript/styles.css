@@ -1,0 +1,38 @@
+body {
+  font-size: 25px;
+  background-image:url(iiif-service_gmd_gmd5_g5700_g5700_ct000045-full-pct_25-0-default.jpeg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  padding: 40px;
+}
+
+.x {
+  margin: 25px;
+  padding: 20px;
+  background: rgba(240, 233, 226, 0.898);
+  line-height: 25px;
+  line-break: auto
+  height: 1200px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+}
+
+h3 {
+font-family: 'Apple Chancery';font-size: 20px;
+font-weight: 200
+}
+
+.formatText {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  white-space: pre-line;
+}

@@ -1,0 +1,36 @@
+body {
+  font-size: 25px;
+  background-image:url(iiif-service_gmd_gmd5_g5700_g5700_ct000045-full-pct_25-0-default.jpeg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  padding: 40px;
+}
+
+.x {
+  margin: 20px;
+  padding: 20px;
+  background: rgba(240, 233, 226, 0.898);
+  line-height: 40px;
+  line-break: auto
+  height: 1200px;
+  font-size: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 30px;
+
+}
+
+.formatText {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: Garamond, serif;
+  white-space: pre-line;
+}
