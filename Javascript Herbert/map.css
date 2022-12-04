@@ -1,0 +1,23 @@
+#map { 
+    height: 700px; 
+    width: 100%;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+
+  }
+
+  p {
+    font-size: 20px;
+    text-align: center;
+  }
