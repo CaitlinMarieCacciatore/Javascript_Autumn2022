@@ -1,40 +1,37 @@
-let poemMap;
-poemMap = L.map("map");
+let worldMap;
+worldMap = L.map("map");
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(poemMap);
+}).addTo(worldMap);
 
-poemMap.setView([40.7128, -74.0060], 16);
+worldMap.setView([49.842957, 24.031111], 7);
 
-const timesSquare = L.marker([40.7580, -73.9855]).addTo(poemMap);
+const Paris = L.marker([48.864716, 2.349014]).addTo(worldMap);
+const Berlin = L.marker([52.520008, 13.404954]).addTo(worldMap);
+const Lviv = L.marker([49.842957, 24.031111]).addTo(worldMap);
+const Warsaw = L.marker([52.237049, 21.017532]).addTo(worldMap);
+const Kraków = L.marker([50.049683, 19.944544]).addTo(worldMap);
 
-timesSquare.bindPopup("<b>Times Square</b>");
+
+Lviv.bindPopup("<b>Herbert was born in the then-Polish city of Lwów. He was forced to leave after the 1939 invasion of Poland. The Siege of Lwów lasted just five days in September of that year, according to the Lviv Center for Urban History, after which the city fell to the combined forces of the Wehrmacht and the Red Army and became part of the Soviet Union.</b>");
+Paris.bindPopup("<b>Herbert lived briefly in Paris.</b>");
+Berlin.bindPopup("<b>Herbert also lived in Berlin for a time.</b>");
+Warsaw.bindPopup("<b>Herbert died in Warsaw on July 28, 1998 at the age of 73.</b>");
+Kraków.bindPopup("<b>Herbert stuided at the Fine Arts Academy in Kraków.</b>")
+
+
 
 const circle = L.circle([40.7580, -73.9855], {
     color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.5,
     radius: 500
-}).addTo(poemMap);
+}).addTo(worldMap);
 
-const polyline = L.polyline([
-    [40.7580, -73.9855],
-    [40.7486, -73.9840]
-], {
-    color: 'blue'
-}).addTo(poemMap);
 
-polyline.bindPopup("<b>Times Square to the Graduate Center</b>");
-
-circle.bindPopup("I'm a circle!");
-
-const latLng = timesSquare.getLatLng();
-console.log(latLng.lat);
-console.log(latLng.lng);
-
-poemMap.panTo(timesSquare.getLatLng());
+poemMap.panTo(Lviv.getLatLng());
 
 poemMap.on('click', function(e) {
     const latLng = e.latlng;
@@ -42,13 +39,3 @@ poemMap.on('click', function(e) {
     console.log(latLng.lng);
 });
 
-L.marker([40.754421, -73.976196]).addTo(poemMap);
-
-// define rectangle geographical bounds
-var bounds = [[54.559322, -73.976196], [56.1210604, -74.976196]];
-
-// create an orange rectangle
-L.rectangle(bounds, {color: "#ff7800", weight: 2}).addTo(poemMap);
-
-// zoom the map to the rectangle bounds
-PoemMap.fitBounds(bounds);

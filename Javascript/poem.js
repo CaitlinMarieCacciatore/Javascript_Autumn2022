@@ -27,6 +27,9 @@ $.getJSON("poem.json", function(data){ // data variable is the JSON object
   $("#poem").html(poemText);
   // Now that we have the data, we can add the click event to the poem
   $("#poem a").click(function(){
+    // stop the link from doing its default action
+    event.preventDefault();
+
     let infoText, clickedWord, clickedInfo;
     clickedWord = $( this ).text();
     // .data("info") looks for the data-info HTML attribute
@@ -37,12 +40,13 @@ $.getJSON("poem.json", function(data){ // data variable is the JSON object
     $("#info").html(infoText);
 
     var element_to_scroll_to = document.getElementById("info");
-    element_to_scroll_to.scrollIntoView(true);
+    console.log(element_to_scroll_to);
+    element_to_scroll_to.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
+  });
 
   });
 
 
-});
 
  // Close the getJSON method and callback function
