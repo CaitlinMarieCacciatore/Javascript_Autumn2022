@@ -24,15 +24,23 @@ h1 {
 
 p {
   font-size: 20px;
+
 }
 
 h3 {
 font-family: 'Apple Chancery';font-size: 20px;
 font-weight: 200
+
 }
 
 .formatText {
   color: rgb(0, 0, 0);
   text-align: center;
-  white-space: pre-line;
+  white-space: normal;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
 }
