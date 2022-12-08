@@ -44,3 +44,16 @@ h4 {
   font-weight: bold;
   text-align: center;
 }
+
+#calltoaction {
+  border: 5px solid rgb(55, 16, 25);
+  background-color: #f8CC9C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+  padding: 30px;
+}
