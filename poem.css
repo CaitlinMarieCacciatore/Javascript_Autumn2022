@@ -1,0 +1,67 @@
+body {
+   font-size: 25px;
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/77/1771_Zannoni_Map_of_Poland_and_Lithuania_-_Geographicus_-_Poland-zannoni-1771.jpg");
+      background-color: #cccccc;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+      padding: 40px;
+
+     }
+  
+.x {
+      margin: 5px;
+      padding: 10px;
+      background: rgba(240, 233, 226, 0.898);
+      line-height: 18px;
+      height: 1200px;
+      font-size: 20px;
+      text-align: center;
+    }
+  
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+
+  }
+
+  h2 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+
+  }
+  
+  p {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .formatText {
+    font-size: 50px;
+    color: rgb(37, 9, 20);
+    text-align: center;
+    font-family: Garamond, Serif;
+    white-space: pre-line;
+  }
+
+  a:link, a:visited {
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
+
+
+
+  

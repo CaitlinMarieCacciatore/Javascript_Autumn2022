@@ -1,0 +1,40 @@
+#map { 
+    height: 700px; 
+    width: 95%;
+    margin: 0 auto;
+}
+
+body {
+ background-color: #FFE9BB
+}
+
+#information {
+  border: 5px solid rgb(55, 16, 25);
+  background-color: #f8CC9C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+
+  }
+
+  p {
+    font-size: 20px;
+    text-align: center;
+  }
